@@ -1,0 +1,11 @@
+<theme>
+	<formatVersion>6</formatVersion>
+    <variables>
+        <transparent>00000000</transparent>
+        <black>000000</black>
+        <white>FFFFFF</white>
+        <pink>ff00ff</pink>
+        <blue>00cfff</blue>
+        <yellow>ffff00</yellow>
+    </variables>
+</theme>
