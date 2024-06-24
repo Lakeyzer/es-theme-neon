@@ -31,7 +31,7 @@ email:			keyroos@gmail.com
 				<backgroundColor>${transparent}</backgroundColor>
 				<pos>0.95 0.08</pos>
 				<origin>1 0</origin>
-				<size>0.2 0.0001</size>
+				<size>0.3 0.0001</size>
 			</text>
 		</view>
 	</feature>
@@ -50,13 +50,13 @@ email:			keyroos@gmail.com
 	</feature>
 
 	<view name="system">
-		<!-- <image name="system_image" extra="true">
+		<image name="system_image" extra="true">
 			<path>./_inc/images/systems/${system.theme}.png</path>
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<size>1 1</size>
+			<origin>1 0.5</origin>
+			<pos>0.98 0.5</pos>
+			<maxSize>0.5 1</maxSize>
 			<zIndex>2</zIndex>
-		</image> -->
+		</image>
 		<image name="logo">
 			<path>./_inc/images/logos/${system.theme}.png</path>
 		</image>
@@ -90,7 +90,7 @@ email:			keyroos@gmail.com
 
 		<helpsystem name="help">
 			<textColor>${white}</textColor>
-			<iconColor>${blue}</iconColor>
+			<iconColor>${yellow}</iconColor>
 			<fontPath>./_inc/fonts/Neon.ttf</fontPath>
 			<fontSize>0.03</fontSize>
 			<origin>1 1</origin>
@@ -99,37 +99,40 @@ email:			keyroos@gmail.com
 	</view>
 
 	<view name="detailed, video">
-		<image name="background_video" extra="true">
-			<path>./_inc/images/bg_color.png</path>
-			<origin>0.5 0.5</origin>
-			<pos>0.712 0.393</pos>
-			<size>0.32 0.31</size>
-			<color>${black}</color>
-			<zIndex>1</zIndex>
-		</image>
-
-		<image name="crt_image" extra="true">
-			<path>./_inc/images/CRT.png</path>
-			<origin>1 1</origin>
-			<pos>1 0.98</pos>
-			<maxSize>1 0.97</maxSize>
-			<zIndex>40</zIndex>
-		</image>
-	</view>
-
-	<view name="detailed, video">
-		
-			<image name="logo_placeholder" extra="true">
+			<image name="background_video" extra="true">
 				<path>./_inc/images/bg_color.png</path>
 				<origin>0.5 0.5</origin>
-				<pos>0.7 0.1</pos>
-				<size>0.4 0.19</size>
+				<pos>0.712 0.393</pos>
+				<size>0.32 0.31</size>
+				<color>${black}</color>
+				<zIndex>1</zIndex>
 			</image>
 			<image name="logo">
 				<path>./_inc/images/logos/${system.theme}.png</path>
+				<origin>0 0.5</origin>
+				<pos>0.02 0.08</pos>
+				<maxSize>1 0.12</maxSize>
+			</image>
+			
+			<!-- <image name="rating_placeholder" extra="true">
+				<path>./_inc/images/bg_color.png</path>
 				<origin>0.5 0.5</origin>
-				<pos>0.7 0.1</pos>
-				<maxSize>0.4 0.19</maxSize>
+				<pos>0.725 0.085</pos>
+				<size>0.366 0.12</size>
+			</image> -->
+			<rating name="md_rating">
+				<origin>0.5 0.5</origin>
+				<pos>0.725 0.085</pos>
+				<size>0.366 0.12</size>
+				<unfilledPath>./_inc/images/star_off.png</unfilledPath>
+				<filledPath>./_inc/images/star_glow.png</filledPath>
+			</rating>
+			<image name="crt_image" extra="true">
+				<path>./_inc/images/CRT.png</path>
+				<origin>1 1</origin>
+				<pos>1 0.98</pos>
+				<maxSize>1 0.97</maxSize>
+				<zIndex>40</zIndex>
 			</image>
 
 			<textlist name="gamelist">
@@ -138,20 +141,31 @@ email:			keyroos@gmail.com
 				<primaryColor>${white}</primaryColor>
 				<secondaryColor>${white}</secondaryColor>
 				<fontPath>./_inc/fonts/Neon.ttf</fontPath>
-				<pos>0.02 0.1</pos>
+				<pos>0.018 0.155</pos>
 				<size>0.5 0.5</size>
-				<fontSize>0.04</fontSize>
+				<fontSize>0.06</fontSize>
 				<horizontalMargin>0.01</horizontalMargin>
 			</textlist>
 
+			<text name="md_description">
+				<pos>0.025 0.66</pos>
+				<size>0.48 0.16</size>
+				<color>${white}</color>
+				<fontPath>./_inc/fonts/Neon.ttf</fontPath>
+				<fontSize>0.026</fontSize>
+				<alignment>left</alignment>
+				<forceUppercase>0</forceUppercase>
+				<lineSpacing>1.6</lineSpacing>
+			</text>
+
 			<!-- <image name="md_image">
 				<origin>0.5 0.5</origin>
-				<pos>0.545 0.33</pos>
-				<maxSize>0.33 0.58</maxSize>
-			</image>
+				<pos>0.712 0.393</pos>
+				<maxSize>0.38 0.33</maxSize>
+			</image> -->
 		
 
-			<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+			<!-- <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
 				<color>000000</color>
 				<forceUppercase>1</forceUppercase>
 				<fontPath>./_inc/fonts/Neon.ttf</fontPath>
@@ -231,19 +245,7 @@ email:			keyroos@gmail.com
 				</text>
 				<datetime name="md_lastplayed">
 					<pos>0.75 0.50</pos>
-				</datetime>
-		
-
-			<text name="md_description">
-				<pos>0.38 0.68</pos>
-				<size>0.60 0.21</size>
-				<color>000000</color>
-				<fontPath>./_inc/fonts/Neon.ttf</fontPath>
-				<fontSize>0.026</fontSize>
-				<alignment>left</alignment>
-				<forceUppercase>0</forceUppercase>
-				<lineSpacing>1.6</lineSpacing>
-			</text> -->
+				</datetime> -->
 	</view>
 
 </theme>
