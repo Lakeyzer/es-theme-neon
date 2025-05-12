@@ -6,61 +6,13 @@ email:			keyroos@gmail.com
 -->
 
 <theme>
-	<formatVersion>6</formatVersion>
+	<formatVersion>7</formatVersion>
 	<include>./variables.xml</include>
-
-	<feature supported="carousel">
-		<view name="system">
-			<carousel name="systemcarousel">
-				<logoSize>0.2 0.3851851851851852</logoSize>
-				<maxLogoCount>4</maxLogoCount>
-				<zIndex>101</zIndex>
-				<type>vertical_wheel</type>
-				<color>${transparent}</color>
-				<logoScale>2</logoScale>
-				<logoAlignment>left</logoAlignment>
-				<size>0.95 1</size>
-				<pos>0.05 0 </pos>
-			</carousel>
-
-			<text name="systemInfo">
-				<color>${yellow}</color>
-				<fontPath>./_inc/fonts/Neon.ttf</fontPath>
-				<fontSize>0.04</fontSize>
-				<forceUppercase>0</forceUppercase>
-				<backgroundColor>${transparent}</backgroundColor>
-				<pos>0.95 0.08</pos>
-				<origin>1 0</origin>
-				<size>0.3 0.0001</size>
-			</text>
-		</view>
-	</feature>
-
-	<feature supported="video">
-		<view name="video">
-			<video name="md_video">
-				<origin>0.5 0.5</origin>
-				<pos>0.712 0.393</pos>
-				<maxSize>0.38 0.33</maxSize>
-				<default></default>
-				<showSnapshotNoVideo>true</showSnapshotNoVideo>
-				<showSnapshotDelay>false</showSnapshotDelay>
-			</video>
-		</view>
-	</feature>
-
-	<view name="system">
-		<image name="system_image" extra="true">
-			<path>./_inc/images/systems/${system.theme}.png</path>
-			<origin>1 0.5</origin>
-			<pos>0.98 0.5</pos>
-			<maxSize>0.5 1</maxSize>
-			<zIndex>2</zIndex>
-		</image>
-		<image name="logo">
-			<path>./_inc/images/logos/${system.theme}.png</path>
-		</image>
-	</view>
+	<include>./views/menu.xml</include>
+	<include>./views/carousel.xml</include>
+	<include>./views/system.xml</include>
+	<include>./views/video.xml</include>
+	<include>./views/detailed.xml</include>
 
 	<view name="system, basic, detailed, video">
 
@@ -82,19 +34,19 @@ email:			keyroos@gmail.com
 
 		<!-- <image name="background_help" extra="true">
 			<path>./_inc/images/bg_color.png</path>
-			<origin>0 1</origin>
-			<pos>0 1</pos>
-			<size>1 0.070</size>
 			<color>FFFFFF99</color>
+			<size>1 0.070</size>
+			<origin>0.5 1</origin>
+			<pos>0.5 0.98</pos>
 		</image> -->
 
 		<helpsystem name="help">
 			<textColor>${white}</textColor>
 			<iconColor>${yellow}</iconColor>
 			<fontPath>./_inc/fonts/Neon.ttf</fontPath>
-			<fontSize>0.03</fontSize>
-			<origin>1 1</origin>
-			<pos>0.98 0.9515</pos>
+			<fontSize>0.025</fontSize>
+			<origin>0.5 1</origin>
+			<pos>0.5 0.98</pos>
 		</helpsystem>
 	</view>
 
@@ -113,7 +65,7 @@ email:			keyroos@gmail.com
 				<pos>0.02 0.08</pos>
 				<maxSize>1 0.12</maxSize>
 			</image>
-			
+
 			<!-- <image name="rating_placeholder" extra="true">
 				<path>./_inc/images/bg_color.png</path>
 				<origin>0.5 0.5</origin>
@@ -142,7 +94,7 @@ email:			keyroos@gmail.com
 				<secondaryColor>${white}</secondaryColor>
 				<fontPath>./_inc/fonts/Neon.ttf</fontPath>
 				<pos>0.018 0.155</pos>
-				<size>0.5 0.5</size>
+				<size>0.55 0.5</size>
 				<fontSize>0.06</fontSize>
 				<horizontalMargin>0.01</horizontalMargin>
 			</textlist>
@@ -157,13 +109,6 @@ email:			keyroos@gmail.com
 				<forceUppercase>0</forceUppercase>
 				<lineSpacing>1.6</lineSpacing>
 			</text>
-
-			<!-- <image name="md_image">
-				<origin>0.5 0.5</origin>
-				<pos>0.712 0.393</pos>
-				<maxSize>0.38 0.33</maxSize>
-			</image> -->
-		
 
 			<!-- <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
 				<color>000000</color>

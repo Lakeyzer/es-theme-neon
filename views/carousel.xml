@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+    <feature supported="carousel">
+        <view name="system">
+            <carousel name="systemcarousel">
+                <logoSize>0.2 0.3851851851851852</logoSize>
+                <maxLogoCount>4</maxLogoCount>
+                <zIndex>101</zIndex>
+                <type>vertical_wheel</type>
+                <color>${transparent}</color>
+                <logoScale>2</logoScale>
+                <logoAlignment>left</logoAlignment>
+                <size>0.95 1</size>
+                <pos>0.05 0 </pos>
+            </carousel>
+
+            <text name="systemInfo">
+                <color>${yellow}</color>
+                <fontPath>./_inc/fonts/Neon.ttf</fontPath>
+                <fontSize>0.04</fontSize>
+                <forceUppercase>0</forceUppercase>
+                <backgroundColor>${transparent}</backgroundColor>
+                <pos>0.95 0.08</pos>
+                <origin>1 0</origin>
+                <size>0.3 0.0001</size>
+            </text>
+        </view>
+    </feature>
+</theme>

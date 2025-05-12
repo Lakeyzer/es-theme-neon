@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+    <feature supported="video">
+		<view name="video">
+			<video name="md_video">
+				<origin>0.5 0.5</origin>
+				<pos>0.712 0.393</pos>
+				<maxSize>0.34 0.34</maxSize>
+				<default></default>
+				<showSnapshotNoVideo>true</showSnapshotNoVideo>
+				<showSnapshotDelay>true</showSnapshotDelay>
+				<showVideoAtDelay>0</showVideoAtDelay>
+				<transition>none</transition>
+				<zIndex>10</zIndex>
+				<snapToWindow>true</snapToWindow>
+			</video>
+		</view>
+	</feature>
+</theme>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+    <view name="system">
+		<image name="system_image" extra="true">
+			<path>./_inc/images/systems/${system.theme}.png</path>
+			<origin>1 0.5</origin>
+			<pos>0.98 0.5</pos>
+			<maxSize>0.5 1</maxSize>
+			<zIndex>2</zIndex>
+		</image>
+		<image name="logo">
+			<path>./_inc/images/logos/${system.theme}.png</path>
+		</image>
+	</view>
+</theme>

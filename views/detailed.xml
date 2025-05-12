@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+    <view name="detailed">
+        <image name="md_image">
+            <origin>0.5 0.5</origin>
+            <pos>0.712 0.393</pos>
+            <maxSize>0.34 0.34</maxSize>
+        </image>
+    </view>
+</theme>
